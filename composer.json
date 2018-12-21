@@ -1,0 +1,14 @@
+{
+  "name": "downeyl/araphp",
+  "description": "a simple php framework",
+  "require": {
+    "noahbuscher/macaw": "dev-master",
+    "illuminate/database": "*"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}
