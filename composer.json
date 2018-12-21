@@ -3,7 +3,8 @@
   "description": "a simple php framework",
   "require": {
     "noahbuscher/macaw": "dev-master",
-    "illuminate/database": "*"
+    "illuminate/database": "*",
+    "filp/whoops": "*"
   },
   "license": "MIT",
   "autoload": {

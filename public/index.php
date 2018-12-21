@@ -1,14 +1,9 @@
 <?php
-use Illuminate\Database\Capsule\Manager as Capsule;
+// Define PUBLIC_PATH
+define('PUBLIC_PATH', __DIR__);
 
-// Autoload
-require '../vendor/autoload.php';
-
-// Eloquent ORM
-$capsule = new Capsule();
-$capsule->addConnection(require '../config/database.php');
-$capsule->bootEloquent();
+// Bootstrap
+require PUBLIC_PATH . '/../bootstrap.php';
 
 // Router
-
-require '../config/route.php';
+require BASE_PATH . '/config/route.php';
