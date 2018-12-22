@@ -9,12 +9,14 @@
 namespace App\Http\Controllers;
 
 use App\Http\Models\Articles;
+use Services\View;
 
 class HomeController extends Controller
 {
     public function home()
     {
-        $article = Articles::first();
-        echo $article->title, $article->content;
+        $this->view = View::make('home.view')
+            ->with('article', Articles::first())
+            ->withTitle('Article');
     }
 }
